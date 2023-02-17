@@ -18,8 +18,8 @@ const ProductForm = ({ colors, sizes, currentColor, currentSize, setCurrentColor
 };
 
 ProductForm.propTypes = {
-  colors: PropTypes.array.isRequired,
-  sizes: PropTypes.array.isRequired,
+  colors: PropTypes.arrayOf(PropTypes.string).isRequired,
+  sizes: PropTypes.arrayOf(PropTypes.object).isRequired,
   currentColor: PropTypes.string.isRequired,
   currentSize: PropTypes.string.isRequired,
   setCurrentColor: PropTypes.func.isRequired,

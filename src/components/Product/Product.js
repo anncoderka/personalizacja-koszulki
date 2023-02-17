@@ -41,8 +41,8 @@ const Product = ({ title, name, basePrice, sizes, colors, }) => {
 Product.propTypes = {
   name: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  colors: PropTypes.array.isRequired,
-  sizes: PropTypes.array.isRequired,
+  colors: PropTypes.arrayOf(PropTypes.string).isRequired,
+  sizes: PropTypes.arrayOf(PropTypes.object).isRequired,
   basePrice: PropTypes.number.isRequired,
 }
 

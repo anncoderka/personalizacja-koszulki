@@ -19,12 +19,12 @@ const OptionColor = ({ colors, currentColor, setCurrentColor }) => {
               </li>
             )}
             </ul>
-          </div>
+    </div>
 	);
 };
 
-OptionColor.propTypes= {
-	colors: PropTypes.array.isRequired,
+OptionColor.propTypes = {
+	colors: PropTypes.arrayOf(PropTypes.string).isRequired,
 	currentColor: PropTypes.string.isRequired,
 	setCurrentColor: PropTypes.func.isRequired,
 };
